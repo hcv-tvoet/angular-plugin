@@ -1,15 +1,15 @@
-@import "../../vars"
+@use "../../vars" as vars
 
 :host
   display: inline-block
   cursor: pointer
   border: 1px solid white
-  border-radius: $socket-size/2.0
-  width: $socket-size
-  height: $socket-size
-  margin: $socket-margin
+  border-radius: vars.$socket-size*0.5
+  width: vars.$socket-size
+  height: vars.$socket-size
+  margin: vars.$socket-margin
   vertical-align: middle
-  background: $socket-color
+  background: vars.$socket-color
   z-index: 2
   box-sizing: border-box
   &:hover
@@ -17,6 +17,6 @@
   &.multiple
     border-color: yellow
   &.output
-    margin-right: - $socket-size / 2
+    margin-right: - vars.$socket-size * 0.5
   &.input
-    margin-left: - $socket-size / 2
+    margin-left: - vars.$socket-size * 0.5
