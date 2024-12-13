@@ -1,6 +1,6 @@
 import { Component, Input, HostBinding, ChangeDetectorRef, OnChanges } from '@angular/core';
 import { ClassicPreset as Classic } from 'rete';
-import { KeyValue } from '@angular/common';
+import { CommonModule, KeyValue } from '@angular/common';
 
 type NodeExtraData = { width?: number, height?: number }
 type SortValue<N extends Classic.Node> = (N['controls'] | N['inputs'] | N['outputs'])[string]
