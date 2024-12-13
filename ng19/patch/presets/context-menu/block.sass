@@ -1,0 +1,23 @@
+@use "sass:math"
+@use "./context-vars" as context-vars
+
+.block
+  display: block
+  color: #fff
+  padding: 4px
+  border-bottom: 1px solid context-vars.$context-color-dark
+  background-color: context-vars.$context-color
+  cursor: pointer
+  width: 100%
+  position: relative
+
+  &:first-child
+    border-top-left-radius: context-vars.$context-menu-round
+    border-top-right-radius: context-vars.$context-menu-round
+
+  &:last-child
+    border-bottom-left-radius: context-vars.$context-menu-round
+    border-bottom-right-radius: context-vars.$context-menu-round
+
+  &:hover
+    background-color: context-vars.$context-color-light

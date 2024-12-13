@@ -1,0 +1,9 @@
+@use "sass:math"
+@use "../../context-vars" as context-vars
+
+:host
+  display: block
+  padding: 10px
+  width: context-vars.$width
+  margin-top: -20px
+  margin-left: - math.div(context-vars.$width, 2)
